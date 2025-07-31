@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"> 
+    <title>Siggy Nazimowitz</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="landing">
+    <div class="sidebar1">
+    <h2><center><u>RESEARCH</u></center></h2>
+    <a href="https://nazime1.github.io/Principles-of-Software/"><img id="tree" src="color_tree.gif" style="width: 40%;"></a>
+    </div>
+    <div class="main">
+    <center><h1><u>SIGGY - 22 - HE/HIM 🏳️‍⚧</u>️</h1>
+    <img id="avital" src="embraquil avital.png" alt="Art by AureusAbditory!" style="width:35%;">
+    <div id="modal7" class="modal">
+        <span class="close7">&times;</span>
+        <img class="modal-content" id="img07">
+        <div id="caption7"></div>
+        </div>
+        
+        <script>
+        var modal = document.getElementById("modal7");
+        var img = document.getElementById("avital");
+        var modalImg = document.getElementById("img07");
+        var captionText = document.getElementById("caption7");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close7")[0];
+
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
+    <p>Computer Science graduate from Rensselaer Polytechnic Institute.</p>
+    
+    <p>I made a <a href="https://github.com/nazime1/bluesky-webhook-code">Bluesky webhook</a> intended for sending posts to Discord.</p></center>
+    </div>
+    <div class="sidebar2">
+    <h2><center><u>PORTFOLIO</u></center></h2>
+    <a href="portfolio.html"><img id="kiss" src="1987.png" style="width:40%;"></a>
+    </div>
+  </div>
+  </body>
+</html>
